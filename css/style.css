@@ -20,7 +20,7 @@ body, html
 .intro h5
 {
 	text-transform: uppercase;
-	background-color: #f5f5f5;
+	background-color: rgba(248, 248, 248, 0.4);
 	padding: 10px;
 	color: #333333;
 	display: inline-block;
@@ -279,9 +279,19 @@ footer
 }
 
 .profile {
-	background-image: url('https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xpf1/t31.0-8/861182_842413720198_1381077436_o.jpg');
+	background-postion: relative;
+
+	background-repeat: no-repeat;
+	background-image: url('/images/Profile.jpg');
 }
 
-.octicon {
+.top-right {
+	position: relative;
+	left: 0%;
+	top: 0%;
+}
+
+
+@font-face {
 	
 }
