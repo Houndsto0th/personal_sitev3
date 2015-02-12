@@ -146,3 +146,142 @@ footer
 {
 	padding-top: 0px;
 }
+
+/* Inky Buttonz */
+.btn-ink {
+	width: 4em;
+	height: 4em;
+	background-color: #616161;
+	color: #ffffff;
+	box-shadow: 0 0 10px
+	rgba(0,0,0,0.5);
+	border-radius: 2em;
+	overflow: hidden;
+	transform: translateZ(0) scale(1);
+	transition: all 0.5s ease;
+	margin: 0 auto;
+	display: inherit;
+}
+
+
+.btn-ink:hover {
+	box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.btn-ink:active {
+	transform: scale(.75, .75);
+}
+
+.btn-ink:focus {
+	outline: 0;
+	border:none;
+	color: rgba(0, 0, 0, 0);
+}
+
+.btn-ink > span {
+	display: block;
+	position: fixed;
+	width: 44%;
+	height: 44%;
+	transition: transform 0.5s ease;
+	overflow: hidden;
+	margin: 28%;
+}
+
+.btn-ink > span > span {
+	display: block;
+	background-color: #CDDC39;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: all 0.5s ease;
+	border: 1px solid transparent;
+}
+
+
+/* Play Button */
+
+.btn-ink.play > span {
+	transform: translate(67%,0) scale(2.1,1.2);
+}
+
+.btn-ink.play > span > span {
+	transform: rotate(-45deg) translate(-50%, -50%) scale(1,1);
+}
+
+/* Pause Button */
+
+.btn-ink.pause > span > span {
+	transform: scale(0.4,1) translate(-74%, 0);
+}
+
+.btn-ink.pause > span > span.s3 {
+	transform: scale(0.4,1) translate(75%, 0);
+}
+
+/* Stop Button */
+
+.btn-ink.stop > span {
+	transform: scale(1,1);
+}
+
+/* Plus Button */
+
+.btn-ink.plus > span > span {
+	transform: scale(0.4,1);
+}
+
+.btn-ink.plus > span > span.s3 {
+	transform: rotate(90deg) scale(0.4,1);
+}
+
+/* Exclamation */
+.btn-ink.exclaim > span {
+	transform: scale(1.3);
+}
+
+.btn-ink.exclaim > span > span {
+	transform: scale(0.3,.8) translate(0, -30%);
+}
+
+.btn-ink.exclaim > span > span.s3 {
+	border-radius: 50%;
+	transform: scale(0.3,.3) translate(0, 116%);
+}
+
+/* 'X' Button */
+.btn-ink.x > span > span {
+	transform: rotate(45deg) scale(0.4,1);
+}
+
+.btn-ink.x > span > span.s3 {
+	transform: rotate(135deg) scale(0.4,1);
+}
+
+/* Menu button */
+.btn-ink.menu > span > span.s1 {
+	transform: rotate(90deg) scale(0.25,1) translate(-150%, 0);
+}
+.btn-ink.menu > span > span.s2 {
+	transform: rotate(90deg) scale(0.25,1) translate(0, 0);
+}
+
+.btn-ink.menu > span > span.s3 {
+	transform: rotate(90deg) scale(0.25,1) translate(150%, 0);
+}
+
+/* Minus Button */
+
+.btn-ink.minus > span > span {
+	transform: scale(1, .4)
+}
+
+.profile {
+	background-image: url('https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xpf1/t31.0-8/861182_842413720198_1381077436_o.jpg');
+}
+
+.octicon {
+	
+}
