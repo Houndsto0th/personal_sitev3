@@ -162,8 +162,8 @@ footer
 	height: 4em;
 	background-color: #efebe9;
 	color: #ffffff;
-	box-shadow: 0 0 10px
-	rgba(0,0,0,0.5);
+	box-shadow: 0 0 4px
+	rgba(0,0,0,0.3);
 	border-radius: 50%;
 	overflow: hidden;
 	transform: translateZ(0) scale(1);
@@ -174,7 +174,8 @@ footer
 
 
 .btn-ink:hover {
-	box-shadow: 0 0 10px rgba(0,0,0,0.4);
+	box-shadow: 0 0 5px rgba(0,0,0,0.4);
+
 }
 
 .btn-ink:active {
@@ -290,26 +291,18 @@ footer
 	transform: scale(1, .4)
 }
 
+.hidden {
+	display: none;
+}
+
 .modalactive {
-	z-index: 1;
-	border-radius: 0em;
-	transform: scale(10);
+	position: absolute;
+	
 }
 .profile {
 	background-repeat: no-repeat;
 	background-image: url('/images/Profile.jpg');
 }
-
-.hthmodal {
-	top: 50%;
-	left: 50%;
-	z-index: 1;
-}
-
-.hidden {
-	display: none;
-}
-
 
 
 @font-face {

@@ -1,26 +1,3 @@
-jQuery.fn.center = function(parent) {
-    $(this).addClass('centered');
-
-    this.css({
-        "position": "absolute",
-        "top": ((($(window).height() - this.outerHeight()) / 2) + $(window).scrollTop() + "px"),
-        "left": ((($(window).width() - this.outerWidth()) / 2) + $(window).scrollLeft() + "px"),
-    });
-return this;
-}
-
-jQuery.fn.origin = function (parent) {
-  $(this).removeClass('centered');
-
-  this.css({
-    "position": "static",
-    "top": "auto",
-    "left": "auto",
-  });
-return this;
-}
-
-
 $(document).ready(function(){
     $('.parallax').parallax();
     $('.materialboxed').materialbox();
@@ -33,14 +10,28 @@ $('.btn-ink').hover(function () {
 });
 
 $('.btn-ink').on('click', function () {
-  $(this).toggleClass('modalactive');
-  if ($(this).hasClass('centered')) {
-    $(this).origin();
+  var $this = $(this);
+  var $window = $(window);
+  $this.toggleClass('centered');
+  if ($this.hasClass('centered')) {
+  $this.toggleClass('modalactive');
+    $this.velocity({
+        scaleX: 10,
+        scaleY: 10,
+        borderRadius: "0",
+        top: ((($window.height() - $this.outerHeight()) / 2) + $window.scrollTop() + "px"),
+        left: ((($window.width() - $this.outerWidth()) / 2) + $window.scrollLeft() + "px"),
+        zIndex: 1,
+
+      }, 50 );
   } else {
-    $(this).center();
-  };
-  $(this).siblings().toggleClass('hidden');
-  $(this).find('span').toggle();
+
+    $this.velocity("reverse");
+    $this.toggleClass('modalactive');
+
+  }
+  $this.children().toggleClass('hidden');
+  $this.find('span').toggle();
 
 });
 
