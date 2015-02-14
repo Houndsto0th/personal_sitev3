@@ -118,14 +118,12 @@ body, html
 .contact h5
 {
 	text-align: center;
-	text-transform: uppercase;
 	margin-bottom: 15px;
 }
 
 .contact h6
 {
 	text-align: center;
-	text-transform: uppercase;
 	margin-bottom: 45px;
 }
 
@@ -137,14 +135,13 @@ body, html
 
 .contact .contact-holder
 {
-	padding-left: 40px;
-	text-align: left;
+	text-align: center;
 }
 
 .contact .contact-holder h6
 {
 	margin-bottom: 15px;
-	text-align: left;
+	text-align: center;
 }
 
 .contact .contact-holder p
@@ -160,14 +157,14 @@ footer
 .btn-ink {
 	width: 4em;
 	height: 4em;
-	background-color: #efebe9;
+	background-color: #ffffff;
 	color: #ffffff;
 	box-shadow: 0 0 4px
 	rgba(0,0,0,0.3);
 	border-radius: 50%;
 	overflow: hidden;
 	transform: translateZ(0) scale(1);
-	transition: all .45s ease;
+	transition: all .5s ease;
 	margin: auto;
 	display:inline-block;
 }
@@ -193,7 +190,7 @@ footer
 	position: fixed;
 	width: 2em;
 	height: 2em;
-	transition: transform 0.75s ease;
+	transition: transform 0.1s ease;
 	overflow: hidden;
 	margin: 25%;
 }
@@ -206,7 +203,7 @@ footer
 	left: 0;
 	width: 2em;
 	height: 2em;
-	transition: all 0.5s ease;
+	transition: all 0.3s ease;
 	border: 1px solid transparent;
 }
 
@@ -297,7 +294,7 @@ footer
 
 .modalactive {
 	position: absolute;
-	
+
 }
 .profile {
 	background-repeat: no-repeat;
