@@ -22,6 +22,7 @@ $('.btn-ink').on('click', function () {
         top: ((($window.height() - $this.outerHeight()) / 2) + $window.scrollTop() + "px"),
         left: ((($window.width() - $this.outerWidth()) / 2) + $window.scrollLeft() + "px"),
         zIndex: 1,
+        backgroundColor: '#ffffff',
 
       }, 50 );
   } else {
