@@ -4,7 +4,7 @@ $(document).ready(function(){
 });
 
 $('.btn-ink').hover(function () {
-  $(this).toggleClass('menu');
+  $(this).toggleClass('picture');
   $(this).toggleClass('plus');
 
 });

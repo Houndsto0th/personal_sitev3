@@ -197,7 +197,7 @@ footer
 
 .btn-ink > span > span {
 	display: block;
-	background-color: #ffffff;
+	background-color: #efebe9;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -240,11 +240,11 @@ footer
 /* Plus Button */
 
 .btn-ink.plus > span > span {
-	transform: scale(0.4,1);
+	transform: scale(0.3,1);
 }
 
 .btn-ink.plus > span > span.s3 {
-	transform: rotate(90deg) scale(0.4,1);
+	transform: rotate(90deg) scale(0.3,1);
 }
 
 /* Exclamation */
@@ -272,14 +272,14 @@ footer
 
 /* Menu button */
 .btn-ink.menu > span > span.s1 {
-	transform: rotate(90deg) scale(0.25,1) translate(-150%, 0);
+	transform: rotate(90deg) scale(0.15,1) translate(-250%, 0);
 }
 .btn-ink.menu > span > span.s2 {
-	transform: rotate(90deg) scale(0.25,1) translate(0, 0);
+	transform: rotate(90deg) scale(0.15,1) translate(0, 0);
 }
 
 .btn-ink.menu > span > span.s3 {
-	transform: rotate(90deg) scale(0.25,1) translate(150%, 0);
+	transform: rotate(90deg) scale(0.15,1) translate(250%, 0);
 }
 
 /* Minus Button */
@@ -287,6 +287,36 @@ footer
 .btn-ink.minus > span > span {
 	transform: scale(1, .4)
 }
+
+/* picture corners */
+.btn-ink.picture > span > span {
+	transform: scale(0.4,1);
+
+}
+
+.btn-ink.picture > span > span.s1 {
+	transform: scale(1,1);
+	background-color: #efebe9;
+}
+
+.btn-ink.picture > span > span.s2 {
+	transform: scale(0.4,1);
+	background-color: #d32f2f;
+}
+
+
+.btn-ink.picture > span > span.s3 {
+	transform: rotate(90deg) scale(0.4,1);
+	background-color: #d32f2f;
+
+}
+
+.btn-ink.picture > span > span.s4 {
+	transform: rotate(90deg) scale(0.80,0.80);
+	background-color: #d32f2f;
+}
+
+
 
 .hidden {
 	display: none;
@@ -300,6 +330,30 @@ footer
 	background-repeat: no-repeat;
 	background-image: url('/images/Profile.jpg');
 }
+
+.work {
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+}
+
+.work p {
+	font-size: 2px;
+	padding: .5px;
+}
+
+.work1 {
+	background-image: url('/images/gCampScreen.jpg');
+}
+
+.work2 {
+	background-image: url('/images/vindiScreen.jpg');
+}
+
+.work3 {
+	background-image: url('/images/listenScreen.jpg');
+}
+
 
 
 @font-face {
